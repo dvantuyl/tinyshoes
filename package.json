@@ -2,7 +2,7 @@
   "name": "tinyshoes",
   "version": "0.0.1",
   "scripts": {
-    "dev": "vite dev",
+    "dev": "vite dev --host",
     "build": "vite build && npm run package && npm run build:js",
     "build:js": "vite -c vite.js.config.ts build",
     "preview": "vite preview",
