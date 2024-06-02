@@ -4,6 +4,20 @@ Sveltekit 5 starter with [shoelace](https://shoelace.style). Generates component
 
 ## Commands
 
-1. bun install
-2. bun run dev
-3. bun run build
+- Install
+
+```
+bun install
+```
+
+- Run dev server
+
+```
+bun run dev
+```
+
+- Buid web components to the dist-js directory
+
+```
+bun run build
+```
