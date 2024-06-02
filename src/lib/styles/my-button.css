@@ -1,3 +1,7 @@
+:root,
+:host,
+.sl-theme-light {
+
 sl-button {
   --sl-border-radius-medium: var(--my-button-border-radius-medium, 0.1875rem);
   --base-min-width: var(--my-button-min-width, 9.375rem);
@@ -36,4 +40,5 @@ sl-button[variant='primary'] {
     background-size: 100%;
     transition: background 0s;
   }
+}
 }

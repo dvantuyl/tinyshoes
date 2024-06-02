@@ -7,7 +7,7 @@ export default defineConfig({
     ],
     build: {
         lib: {
-            entry: './dist/index.js',
+            entry: './src/lib/index.ts',
             name: 'Components',
             fileName: (format) => `components.${format}.js`,
         },
