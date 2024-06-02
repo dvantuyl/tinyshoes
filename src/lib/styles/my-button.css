@@ -1,0 +1,39 @@
+sl-button {
+  --sl-border-radius-medium: var(--my-button-border-radius-medium, 0.1875rem);
+  --base-min-width: var(--my-button-min-width, 9.375rem);
+
+  &::part(base) {
+    width: var(--base-min-width);
+    background-position: center;
+    transition: background 0.8s;
+  }
+
+  &::part(label) {
+    text-transform: uppercase;
+  }
+
+  &:hover::part(label) {
+    font-weight: var(--sl-font-weight-bold);
+    letter-spacing: var(--sl-letter-spacing-denser);
+  }
+
+  &:hover::part(base) {
+    transition: background 0.3s ease-out;
+  }
+
+  &:active::part(base) {
+    scale: 0.98;
+  }
+}
+
+sl-button[variant='primary'] {
+  &:hover::part(base) {
+    background: var(--sl-color-primary-500) radial-gradient(circle, transparent 1%, var(--sl-color-primary-500) 2%) center/15000%;
+  }
+
+  &:active::part(base) {
+    background-color: var(--sl-color-primary-400);
+    background-size: 100%;
+    transition: background 0s;
+  }
+}
